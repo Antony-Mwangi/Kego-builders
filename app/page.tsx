@@ -1,11 +1,9 @@
+"use client";
 
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { 
-  Paintbrush, 
-  Home, 
-  Briefcase, 
   Hammer, 
   Layers, 
   ShieldCheck, 
@@ -181,16 +179,16 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* WHY CHOOSE US SECTION */}
+      {/* WHY CHOOSE US SECTION — OPTIMIZED GRID FOR NO SHAKING */}
       <section className="bg-[#0A192F] text-white py-20">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-xs font-bold tracking-[0.25em] text-amber-400 uppercase mb-2">Our Advantages</h2>
-            <p className="text-3xl font-extrabold">Why Choose KEGO Builders?</p>
+            <p className="text-3xl font-extrabold tracking-tight">Why Choose KEGO Builders?</p>
             <div className="h-1 w-12 bg-amber-500 mx-auto rounded mt-3"></div>
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-5 gap-6 text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 text-center transform-gpu backface-hidden">
             {[
               { icon: <Layers size={28} />, name: "Innovative Designs" },
               { icon: <Award size={28} />, name: "Quality Materials" },
@@ -198,9 +196,12 @@ export default function HomePage() {
               { icon: <ShieldCheck size={28} />, name: "Experienced Engineering" },
               { icon: <CheckCircle2 size={28} />, name: "Guaranteed Satisfaction" }
             ].map((adv, idx) => (
-              <div key={idx} className={`bg-slate-900/60 p-6 rounded-lg border border-slate-800/80 space-y-3 flex flex-col items-center justify-center ${idx === 4 ? 'col-span-2 lg:col-span-1' : ''}`}>
+              <div 
+                key={idx} 
+                className="bg-slate-900/60 p-6 rounded-lg border border-slate-800/80 space-y-3 flex flex-col items-center justify-center transform-gpu backface-hidden"
+              >
                 <div className="text-amber-400">{adv.icon}</div>
-                <h4 className="font-bold text-xs sm:text-sm tracking-wide text-white">{adv.name}</h4>
+                <h4 className="font-bold text-xs sm:text-sm tracking-wide text-white antialiased">{adv.name}</h4>
               </div>
             ))}
           </div>
