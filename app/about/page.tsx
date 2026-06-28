@@ -1,11 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { 
-  ShieldCheck, 
-  Users, 
-  Trophy, 
-  Clock, 
-  Sparkles, 
   Building, 
   Hammer, 
   Layers, 
@@ -18,67 +13,81 @@ import {
 export default function AboutPage() {
   const specializedServices = [
     {
-      icon: <Building size={22} />,
-      title: "1. Building Construction",
+      icon: <Building size={24} />,
+      title: "Building Construction",
+      description: "Comprehensive management of modern structural frameworks from excavation to final delivery.",
       points: ["Residential Buildings", "Commercial Buildings", "Renovations & Extensions", "Project Management", "Building Maintenance"]
     },
     {
-      icon: <Hammer size={22} />,
-      title: "2. Roofing Solutions",
+      icon: <Hammer size={24} />,
+      title: "Roofing Solutions",
+      description: "Precision-engineered overhead truss systems designed for absolute aesthetic appeal and weather durability.",
       points: ["Modern Roofing Systems", "Roof Installation", "Light Gauge Steel (LGS)", "Asphalt Shingles & Tiles", "Repairs & Maintenance"]
     },
     {
-      icon: <Layers size={22} />,
-      title: "3. APP Membrane Waterproofing",
+      icon: <Layers size={24} />,
+      title: "APP Membrane Waterproofing",
+      description: "Advanced multi-layer moisture barriers built to prevent flat concrete leaks permanently.",
       points: ["Concrete Roofs & Flat Roofs", "Balconies & Terraces", "Basement Waterproofing", "Primer Applications", "Water Leak Protection"]
     },
     {
-      icon: <Paintbrush size={22} />,
-      title: "4. Interior Décor & Fit-Outs",
+      icon: <Paintbrush size={24} />,
+      title: "Interior Décor & Fit-Outs",
+      description: "High-end bespoke cabinetry and premium partition layout structures to transform raw indoor spaces.",
       points: ["Gypsum Ceiling & TV Units", "Kitchen Cabinets & Wardrobes", "Office Layout & Partitioning", "Painting & Decorative Finishes", "Interior Renovations"]
     },
     {
-      icon: <Maximize size={22} />,
-      title: "5. Exhibition & Custom Booths",
+      icon: <Maximize size={24} />,
+      title: "Exhibition & Custom Booths",
+      description: "Experiential brand fabrication engineered to stand out at conventions and corporate expos.",
       points: ["Exhibition Booth Design", "Trade Show Fabrication", "Promotional Display Stands", "Product Display Units", "Event Branding Structures"]
     }
   ];
 
   return (
-    <div className="bg-slate-50 min-h-screen selection:bg-amber-500 selection:text-white">
+    <div className="bg-slate-50 min-h-screen selection:bg-amber-500 selection:text-white antialiased">
       
-      {/* BRAND HEADER BANNER */}
-      <section className="bg-[#0A192F] text-white py-20 text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f2444_1px,transparent_1px),linear-gradient(to_bottom,#0f2444_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20"></div>
-        <div className="relative max-w-4xl mx-auto px-4 space-y-3">
-          <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-white">About KEGO Builders</h1>
-          <p className="text-amber-400 font-bold tracking-[0.25em] text-xs sm:text-sm uppercase">
+      {/* BRAND HEADER SECTION - Open air, matching body background */}
+      <section className="max-w-7xl mx-auto px-6 pt-20 pb-4 text-center relative">
+        <div className="max-w-4xl mx-auto space-y-3">
+          <span className="inline-block text-xs font-bold tracking-widest text-amber-700 bg-amber-50 px-3 py-1.5 rounded border border-amber-200 uppercase">
+            Corporate Profile
+          </span>
+          <h1 className="text-3xl sm:text-4xl font-black tracking-tight text-slate-950 leading-none">
+            About KEGO Builders
+          </h1>
+          <p className="text-slate-500 font-bold tracking-[0.25em] text-xs sm:text-sm uppercase">
             Building Quality • Creating Value
           </p>
         </div>
       </section>
 
       {/* CORE PROFILE VALUE PROPOSITION */}
-      <section className="py-16 max-w-6xl mx-auto px-4 space-y-16">
-        <div className="bg-white border border-slate-200 rounded-2xl p-8 sm:p-12 shadow-sm grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-          <div className="lg:col-span-7 space-y-5">
-            <span className="text-xs font-bold tracking-wider text-amber-600 uppercase bg-amber-50 px-3 py-1 rounded border border-amber-200">
+      <section className="py-16 max-w-7xl mx-auto px-6 space-y-28">
+        
+        {/* Profile Split Grid */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+          <div className="lg:col-span-7 space-y-6">
+            <span className="text-xs font-bold tracking-widest text-slate-400 uppercase block">
               Corporate Overview
             </span>
-            <h2 className="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight leading-tight">
-              Professional Construction & Finishing Solutions
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-950 tracking-tight leading-tight">
+              Professional Construction &amp; Finishing Solutions
             </h2>
-            <p className="text-slate-600 leading-relaxed font-light text-sm sm:text-base">
+            <p className="text-sm sm:text-base text-slate-600 font-light leading-relaxed">
               Based at <strong>Kamakis Bypass, Ruiru, Kenya</strong>, KEGO Builders is a premier professional engineering and spatial contracting company. We specialize in comprehensive structural building construction, modern roofing systems, high-end interior structural fit-outs, advanced waterproofing systems, and custom brand exhibition booth design fabrication.
             </p>
-            <p className="text-slate-600 leading-relaxed font-light text-sm sm:text-base">
+            <p className="text-sm sm:text-base text-slate-600 font-light leading-relaxed">
               Our core corporate culture is explicitly anchored around delivering uncompromising quality workmanship, highly innovative architectural designs, timely project completion matrices, and exceptional client relationship management across every mandate we execute.
             </p>
           </div>
 
-          <div className="lg:col-span-5 bg-slate-900 text-white rounded-xl p-6 sm:p-8 space-y-4 border border-slate-800 shadow-xl">
-            <h3 className="text-lg font-bold text-amber-400 tracking-tight border-b border-slate-800 pb-2">Why Choose Us</h3>
-            <ul className="space-y-3 text-sm font-medium">
+          {/* Guidelines Matrix - Remade with open typography checklist formatting instead of a box container */}
+          <div className="lg:col-span-5 space-y-5 lg:pt-8">
+            <h3 className="text-sm font-bold text-slate-950 tracking-wider uppercase pb-2 border-b border-slate-200">
+              Why Choose Us
+            </h3>
+            <ul className="space-y-3.5">
               {[
                 "Professional & Experienced Team",
                 "Quality Materials & Workmanship",
@@ -87,61 +96,81 @@ export default function AboutPage() {
                 "Customer Satisfaction Guaranteed",
                 "Innovative Custom Engineering Solutions"
               ].map((value, idx) => (
-                <li key={idx} className="flex items-center gap-2.5">
-                  <CheckCircle2 size={16} className="text-amber-500 shrink-0" />
-                  <span className="text-gray-200 font-light text-xs sm:text-sm">{value}</span>
+                <li key={idx} className="flex items-center gap-3">
+                  <CheckCircle2 size={18} className="text-amber-600 shrink-0" />
+                  <span className="text-slate-700 font-medium text-sm">{value}</span>
                 </li>
               ))}
             </ul>
           </div>
         </div>
 
-        {/* DETAILED SERVICES MATRIX GRID */}
-        <div className="space-y-6">
-          <div className="text-center space-y-2">
-            <h3 className="text-xs font-bold tracking-widest text-amber-600 uppercase">Our Capabilities</h3>
-            <p className="text-2xl font-extrabold text-slate-950 sm:text-3xl tracking-tight">Full Service Architectural Portfolio</p>
-            <div className="h-1 w-12 bg-amber-500 mx-auto rounded mt-2"></div>
+        {/* CORE CAPABILITIES GRID SECTION */}
+        <div className="space-y-16">
+          <div className="space-y-1">
+            <span className="text-xs font-bold tracking-widest text-slate-400 uppercase block">Our Capabilities</span>
+            <h3 className="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight">Full Service Architectural Portfolio</h3>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="space-y-16">
             {specializedServices.map((service, index) => (
               <div 
                 key={index} 
-                className={`bg-white border border-slate-200 rounded-xl p-6 shadow-sm hover:shadow-md hover:border-amber-500/20 transition-all ${
-                  index === 4 ? 'md:col-span-2 lg:col-span-1' : ''
-                }`}
+                className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start pb-12 border-b border-slate-200 last:border-0 last:pb-0"
               >
-                <div className="bg-slate-950 text-amber-400 w-10 h-10 rounded-lg flex items-center justify-center mb-4 shadow-sm">
-                  {service.icon}
+                {/* Left side: Icon Frame, Division Title */}
+                <div className="lg:col-span-5 space-y-4">
+                  <div className="flex items-center gap-4">
+                    <div className="bg-slate-950 text-amber-400 w-12 h-12 rounded-xl flex items-center justify-center shadow-sm shrink-0">
+                      {service.icon}
+                    </div>
+                    <span className="text-xs font-bold tracking-wider text-amber-700 bg-amber-50 px-2.5 py-1 rounded border border-amber-200 uppercase">
+                      Division 0{index + 1}
+                    </span>
+                  </div>
+                  <div className="space-y-2">
+                    <h4 className="font-black text-slate-950 text-xl tracking-tight">
+                      {service.title}
+                    </h4>
+                    <p className="text-sm sm:text-base text-slate-500 font-light leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
-                <h4 className="font-extrabold text-slate-950 text-base tracking-tight mb-3">
-                  {service.title}
-                </h4>
-                <ul className="space-y-1.5 text-xs text-slate-600 font-light">
-                  {service.points.map((pt, pIdx) => (
-                    <li key={pIdx} className="flex items-center gap-2">
-                      <span className="w-1 h-1 rounded-full bg-amber-500 shrink-0"></span>
-                      <span>{pt}</span>
-                    </li>
-                  ))}
-                </ul>
+
+                {/* Right side: Clean, Open Check Matrix */}
+                <div className="lg:col-span-7 lg:pt-2">
+                  <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {service.points.map((pt, pIdx) => (
+                      <li key={pIdx} className="flex items-start gap-3">
+                        <CheckCircle2 size={18} className="text-amber-600 shrink-0 mt-0.5" />
+                        <span className="text-slate-800 text-sm sm:text-base font-medium tracking-tight">{pt}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* BOTTOM REDIRECT BOARD */}
-        <div className="bg-gradient-to-r from-slate-900 to-slate-950 text-white p-8 rounded-xl border border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-6 shadow-lg">
-          <div className="space-y-1 text-center sm:text-left">
-            <p className="text-lg font-bold text-amber-400">Have a pending blueprint structural requirement?</p>
-            <p className="text-xs text-gray-400 font-light">Get a modern, durable structure tailored to your budget parameters.</p>
+        {/* BOTTOM REDIRECT BOARD - CARD COMPONENT REMOVED */}
+        <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
+          <div className="space-y-1">
+            <p className="text-lg font-black text-slate-950">Have a pending blueprint structural requirement?</p>
+            <p className="text-sm text-slate-500 font-light">Get a modern, durable structure tailored to your budget parameters.</p>
           </div>
-          <Link href="/contact" className="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold px-6 py-3 rounded text-xs tracking-wider uppercase transition-all flex items-center gap-2 whitespace-nowrap">
-            <span>Contact Ruiru HQ</span>
-            <ArrowRight size={14} />
-          </Link>
+          <div className="shrink-0 pt-2 md:pt-0">
+            <Link 
+              href="/contact" 
+              className="bg-slate-950 hover:bg-amber-600 text-white font-bold px-8 py-4 rounded uppercase transition-all inline-flex items-center gap-3 text-sm tracking-wide shadow-md"
+            >
+              <span>Contact Ruiru HQ</span>
+              <ArrowRight size={16} />
+            </Link>
+          </div>
         </div>
+
       </section>
 
     </div>

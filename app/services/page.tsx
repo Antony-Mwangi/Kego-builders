@@ -5,10 +5,10 @@ import { Building, Hammer, Shield, Paintbrush, Layers, Check, ArrowRight } from 
 export default function ServicesPage() {
   const serviceItems = [
     {
-      icon: <Building size={26} />,
-      title: "1. Building Construction",
+      icon: <Building size={32} />,
+      title: "Building Construction",
       tagline: "Complete Construction Solutions",
-      desc: "We provide complete construction solutions for residential, commercial, and institutional projects with a dedication to structural integrity.",
+      desc: "We provide complete construction solutions for residential, commercial, and institutional projects with an absolute dedication to structural integrity.",
       subServices: [
         "Residential Buildings",
         "Commercial Buildings",
@@ -18,8 +18,8 @@ export default function ServicesPage() {
       ]
     },
     {
-      icon: <Hammer size={26} />,
-      title: "2. Roofing Solutions",
+      icon: <Hammer size={32} />,
+      title: "Roofing Solutions",
       tagline: "Modern & Durable Roofing Systems",
       desc: "Tailored to suit different architectural designs and client requirements, our roofing setups combine aesthetic elegance with long-term weather endurance.",
       subServices: [
@@ -31,8 +31,8 @@ export default function ServicesPage() {
       ]
     },
     {
-      icon: <Shield size={26} />,
-      title: "3. APP Membrane Waterproofing",
+      icon: <Shield size={32} />,
+      title: "APP Membrane Waterproofing",
       tagline: "Advanced Leak Protection Systems",
       desc: "We specialize in high-grade waterproofing systems utilizing premium APP Membrane and professional Primer applications.",
       subServices: [
@@ -44,8 +44,8 @@ export default function ServicesPage() {
       ]
     },
     {
-      icon: <Paintbrush size={26} />,
-      title: "4. Interior Décor & Fit-Outs",
+      icon: <Paintbrush size={32} />,
+      title: "Interior Décor & Fit-Outs",
       tagline: "Functional & Elegant Finishing Solutions",
       desc: "We transform interior corporate and residential spaces through specialized structural adjustments and premium artisan finishing touches.",
       subServices: [
@@ -57,8 +57,8 @@ export default function ServicesPage() {
       ]
     },
     {
-      icon: <Layers size={26} />,
-      title: "5. Exhibition & Custom Trade Booths",
+      icon: <Layers size={32} />,
+      title: "Exhibition & Custom Trade Booths",
       tagline: "Enhancing Brand Visibility",
       desc: "We design and fabricate custom exhibition stands and high-impact promotional displays configured specifically to maximize customer engagement.",
       subServices: [
@@ -72,77 +72,94 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="bg-slate-50 min-h-screen selection:bg-amber-500 selection:text-white">
+    <div className="bg-slate-50 min-h-screen selection:bg-amber-500 selection:text-white antialiased">
       
-      {/* HEADER HERO BANNER */}
-      <section className="bg-[#0A192F] text-white py-20 text-center relative overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f2444_1px,transparent_1px),linear-gradient(to_bottom,#0f2444_1px,transparent_1px)] bg-[size:4rem_4rem] opacity-20"></div>
-        <div className="relative max-w-4xl mx-auto px-4 space-y-4">
-          <h1 className="text-4xl sm:text-5xl font-black tracking-tight text-white">Our Services Portfolio</h1>
-          <p className="text-amber-400 font-bold tracking-[0.25em] text-xs sm:text-sm uppercase">
+      {/* BRAND HEADER BANNER - Blended with the body background */}
+      <section className="max-w-7xl mx-auto px-6 pt-20 pb-4 text-center relative">
+        <div className="max-w-4xl mx-auto space-y-3">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-slate-950 leading-none">
+            Our Services Portfolio
+          </h1>
+          <p className="text-amber-600 font-bold tracking-[0.25em] text-xs sm:text-sm uppercase">
             Building Quality • Creating Value
           </p>
         </div>
       </section>
 
-      {/* CORE ITERATION MATRIX GRID */}
-      <section className="py-20 max-w-5xl mx-auto px-4 space-y-16">
-        <div className="grid grid-cols-1 gap-10">
-          {serviceItems.map((srv, index) => (
+      {/* CORE RESTRUCTURED LAYOUT - Alternating rows with massive font breathing room */}
+      <section className="py-24 max-w-6xl mx-auto px-4 space-y-28">
+        
+        {serviceItems.map((srv, index) => {
+          const isEven = index % 2 === 0;
+          return (
             <div 
               key={index} 
-              className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col md:flex-row gap-6 items-start hover:border-amber-500/20 transition-all duration-300"
+              className={`flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-16 items-start pb-16 border-b border-slate-200 last:border-0`}
             >
-              {/* Icon Frame */}
-              <div className="bg-slate-950 text-amber-400 p-4 rounded-xl shadow-md shrink-0">
-                {srv.icon}
-              </div>
-
-              {/* Service Details */}
-              <div className="space-y-4 flex-grow w-full">
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-3">
-                  <h3 className="text-xl sm:text-2xl font-black text-slate-950 tracking-tight">
-                    {srv.title}
-                  </h3>
-                  <span className="text-[10px] font-bold tracking-wider uppercase text-amber-700 bg-amber-50 px-2.5 py-1 rounded border border-amber-200 w-fit">
-                    {srv.tagline}
+              {/* Left Column: Core Service Definition and Big Fonts */}
+              <div className={`w-full lg:col-span-5 space-y-5 ${!isEven ? 'lg:order-2' : ''}`}>
+                <div className="flex items-center gap-4">
+                  <div className="bg-slate-950 text-amber-400 p-3.5 rounded-xl shadow-lg shrink-0">
+                    {srv.icon}
+                  </div>
+                  <span className="text-xs font-bold tracking-widest uppercase text-amber-700 bg-amber-50 px-3 py-1 rounded border border-amber-200">
+                    Division 0{index + 1}
                   </span>
                 </div>
 
-                <p className="text-sm text-slate-600 font-light leading-relaxed">
+                <div className="space-y-2">
+                  <h2 className="text-3xl sm:text-4xl font-black text-slate-950 tracking-tight leading-tight">
+                    {srv.title}
+                  </h2>
+                  <p className="text-sm font-semibold text-amber-600 uppercase tracking-wider">
+                    {srv.tagline}
+                  </p>
+                </div>
+
+                <p className="text-base sm:text-lg text-slate-600 font-light leading-relaxed">
                   {srv.desc}
                 </p>
-
-                {/* Sub-Services Checklist Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 pt-2">
-                  {srv.subServices.map((sub, sIdx) => (
-                    <div key={sIdx} className="flex items-center gap-2 text-xs sm:text-sm text-slate-700 font-medium">
-                      <Check size={14} className="text-emerald-600 shrink-0" />
-                      <span>{sub}</span>
-                    </div>
-                  ))}
-                </div>
               </div>
-            </div>
-          ))}
-        </div>
 
-        {/* LOWER VALUE ADVERTISEMENT BAR */}
-        <div className="bg-white rounded-2xl border border-slate-200 p-8 text-center space-y-4 shadow-sm max-w-3xl mx-auto">
-          <h4 className="text-xl font-bold text-slate-950">Ready to Launch Your Structural Layout?</h4>
-          <p className="text-sm text-slate-600 font-light max-w-md mx-auto leading-relaxed">
+              {/* Right Column: High-Readability Expanded Checklist Sheet */}
+              <div className={`w-full lg:col-span-7 bg-white border border-slate-200 rounded-2xl p-6 sm:p-10 shadow-sm ${!isEven ? 'lg:order-1' : ''}`}>
+                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-6">
+                  Specialized Capabilities &amp; Operations
+                </h3>
+                <ul className="space-y-4">
+                  {srv.subServices.map((sub, sIdx) => (
+                    <li key={sIdx} className="flex items-start gap-4 text-base sm:text-lg text-slate-800 font-medium pb-3 border-b border-slate-50 last:border-0 last:pb-0">
+                      <Check size={20} className="text-emerald-600 shrink-0 mt-1" />
+                      <span className="font-medium tracking-tight text-slate-900">{sub}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+            </div>
+          );
+        })}
+
+        {/* RESTRUCTURED VALUE ADVERTISEMENT AREA - NO CARD WRAPPER */}
+        <div className="text-center space-y-6 max-w-4xl mx-auto pt-12">
+          <div className="space-y-2">
+            <span className="text-amber-600 font-bold tracking-widest text-xs uppercase block">Work With Professionals</span>
+            <h4 className="text-2xl sm:text-4xl font-black tracking-tight text-slate-950">Ready to Launch Your Structural Layout?</h4>
+          </div>
+          <p className="text-base sm:text-lg text-slate-600 font-light max-w-2xl mx-auto leading-relaxed">
             Our teams are fully deployed across Ruiru and the wider region, providing quality materials, competitive pricing, and guaranteed customer satisfaction.
           </p>
           <div className="pt-2">
             <Link 
               href="/contact" 
-              className="bg-slate-950 hover:bg-amber-500 hover:text-slate-950 text-white px-6 py-3 rounded text-xs font-bold tracking-wider uppercase transition-colors inline-flex items-center gap-2"
+              className="bg-slate-950 hover:bg-amber-600 text-white font-bold px-8 py-4 rounded uppercase transition-all inline-flex items-center gap-3 text-sm tracking-wide shadow-md"
             >
               <span>Get Free Consultation Estimate</span>
-              <ArrowRight size={14} />
+              <ArrowRight size={16} />
             </Link>
           </div>
         </div>
+
       </section>
 
     </div>
