@@ -43,31 +43,21 @@ export default function Header() {
         </div>
       </div>
 
-      {/* CORE NAVIGATION (Solid Pitch Black, Expanded Height for Larger Logo) */}
+      {/* CORE NAVIGATION (Solid Pitch Black) */}
       <div className="bg-black border-b border-neutral-900 text-white relative">
         <div className="max-w-7xl mx-auto px-4 h-28 flex justify-between items-center">
           
-          {/* Brand Logo & Typography */}
-          <Link href="/" className="flex items-center gap-4 group">
-            {/* SIGNIFICANTLY ENLARGED, UNENCLOSED LOGO WRAPPER */}
-            <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+          {/* Brand Logo Only - Repositioned and Maximized */}
+          <Link href="/" className="flex items-center justify-center group h-full select-none z-10">
+            {/* LARGE OVERLAPPING LOGO WRAPPER */}
+            <div className="relative w-32 h-32 sm:w-40 sm:h-40 -my-4 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
               <Image 
-                src="/logo2.jpeg" 
+                src="/logo3.jpeg" 
                 alt="KEGO Builders Logo" 
                 fill
                 priority
                 className="object-contain mix-blend-screen bg-transparent"
               />
-            </div>
-            
-            {/* Typography Styled & Spaced Cleanly */}
-            <div className="flex flex-col justify-center">
-              <span className="text-2xl sm:text-3xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-100 to-amber-500 leading-none">
-                KEGO
-              </span>
-              <span className="text-[11px] tracking-[0.4em] uppercase text-amber-500/90 font-black mt-1.5 leading-none">
-                BUILDERS
-              </span>
             </div>
           </Link>
 

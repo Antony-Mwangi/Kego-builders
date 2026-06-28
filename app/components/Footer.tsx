@@ -17,7 +17,7 @@ export default function Footer() {
             {/* ENLARGED, UNENCLOSED LOGO WRAPPER MATCHING THE RE-STYLED HEADER */}
             <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center transition-transform duration-300">
               <Image 
-                src="/logo2.jpeg" 
+                src="/logo3.jpeg" 
                 alt="KEGO Builders Logo" 
                 fill
                 className="object-contain mix-blend-screen bg-transparent"
@@ -26,10 +26,10 @@ export default function Footer() {
             
             <div className="flex flex-col justify-center">
               <span className="text-2xl sm:text-3xl font-black tracking-tight text-white leading-none">
-                KEGO
+                
               </span>
               <span className="text-[11px] tracking-[0.4em] uppercase text-amber-500 font-black mt-1.5 leading-none">
-                BUILDERS
+                
               </span>
             </div>
           </div>
