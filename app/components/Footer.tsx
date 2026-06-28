@@ -7,28 +7,28 @@ import { Phone, MapPin, ArrowRight, Shield } from 'lucide-react';
 
 export default function Footer() {
   return (
-    /* Changed bg-[#030712] to bg-[#121214] and adjusted borders for cohesion */
-    <footer className="bg-[#121214] text-gray-400 text-sm border-t border-slate-800/80">
+    /* Solid Pitch Black background matching the header profile exactly */
+    <footer className="bg-black text-gray-400 text-sm border-t border-neutral-900">
       <div className="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-12 gap-10">
         
         {/* Profile */}
         <div className="md:col-span-5 space-y-5">
-          <div className="flex items-center gap-3">
-            {/* UNENCLOSED LOGO WRAPPER MATCHING THE RE-STYLED HEADER */}
-            <div className="relative w-16 h-16 flex items-center justify-center transition-transform duration-300">
+          <div className="flex items-center gap-4">
+            {/* ENLARGED, UNENCLOSED LOGO WRAPPER MATCHING THE RE-STYLED HEADER */}
+            <div className="relative w-24 h-24 sm:w-28 sm:h-28 flex items-center justify-center transition-transform duration-300">
               <Image 
-                src="/logo.png" 
+                src="/logo2.jpeg" 
                 alt="KEGO Builders Logo" 
                 fill
-                className="object-contain"
+                className="object-contain mix-blend-screen bg-transparent"
               />
             </div>
             
             <div className="flex flex-col justify-center">
-              <span className="text-xl font-black tracking-tight text-white leading-none">
+              <span className="text-2xl sm:text-3xl font-black tracking-tight text-white leading-none">
                 KEGO
               </span>
-              <span className="text-[10px] tracking-[0.35em] uppercase text-amber-500 font-black mt-1 leading-none">
+              <span className="text-[11px] tracking-[0.4em] uppercase text-amber-500 font-black mt-1.5 leading-none">
                 BUILDERS
               </span>
             </div>
@@ -55,7 +55,7 @@ export default function Footer() {
             ].map((link) => (
               <li key={link.path}>
                 <Link href={link.path} className="hover:text-amber-400 font-medium transition-colors flex items-center gap-1.5 group text-gray-400">
-                  <ArrowRight size={12} className="text-slate-700 group-hover:text-amber-500 transition-colors" />
+                  <ArrowRight size={12} className="text-neutral-800 group-hover:text-amber-500 transition-colors" />
                   <span>{link.label}</span>
                 </Link>
               </li>
@@ -68,8 +68,8 @@ export default function Footer() {
           <h4 className="text-amber-500 font-black text-xs uppercase tracking-widest">Corporate Contacts</h4>
           <div className="space-y-4 pt-1">
             <a href="tel:0742254007" className="flex items-center gap-3 hover:text-amber-400 transition-colors group">
-              {/* Swapped inner box background to a subtle grey tone for depth */}
-              <div className="w-9 h-9 rounded bg-slate-800/40 border border-slate-700/60 flex items-center justify-center group-hover:border-amber-500/30 transition-colors">
+              {/* Swapped inner box background to true black canvas tone */}
+              <div className="w-9 h-9 rounded bg-neutral-950 border border-neutral-900 flex items-center justify-center group-hover:border-amber-500/30 transition-colors">
                 <Phone size={14} className="text-amber-500" />
               </div>
               <div>
@@ -78,7 +78,7 @@ export default function Footer() {
               </div>
             </a>
             <div className="flex items-center gap-3 group">
-              <div className="w-9 h-9 rounded bg-slate-800/40 border border-slate-700/60 flex items-center justify-center">
+              <div className="w-9 h-9 rounded bg-neutral-950 border border-neutral-900 flex items-center justify-center">
                 <MapPin size={14} className="text-amber-500" />
               </div>
               <div>
@@ -91,8 +91,8 @@ export default function Footer() {
 
       </div>
 
-      {/* Adjusted base copyright layer to sit elegantly below the main charcoal tier */}
-      <div className="border-t border-slate-800/40 bg-[#0b0b0c] py-6 px-4 text-center text-xs text-gray-500 font-semibold uppercase tracking-wider">
+      {/* Base copyright layer completely flattened to pure black */}
+      <div className="border-t border-neutral-900 bg-black py-6 px-4 text-center text-xs text-gray-500 font-semibold uppercase tracking-wider">
         © 2026 KEGO Builders. All Rights Reserved. Built with Premium Standards.
       </div>
     </footer>
