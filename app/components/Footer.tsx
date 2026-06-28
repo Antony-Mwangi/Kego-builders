@@ -7,19 +7,20 @@ import { Phone, MapPin, ArrowRight, Shield } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#030712] text-gray-400 text-sm border-t border-slate-900">
+    /* Changed bg-[#030712] to bg-[#121214] and adjusted borders for cohesion */
+    <footer className="bg-[#121214] text-gray-400 text-sm border-t border-slate-800/80">
       <div className="max-w-7xl mx-auto px-4 py-16 grid grid-cols-1 md:grid-cols-12 gap-10">
         
         {/* Profile */}
         <div className="md:col-span-5 space-y-5">
-          <div className="flex items-center gap-4">
-            {/* ENLARGED LOGO CONTAINER MATCHING THE HEADER */}
-            <div className="relative w-14 h-14 flex items-center justify-center bg-slate-900 rounded-lg border border-slate-700/80 p-1 shadow-inner">
+          <div className="flex items-center gap-3">
+            {/* UNENCLOSED LOGO WRAPPER MATCHING THE RE-STYLED HEADER */}
+            <div className="relative w-16 h-16 flex items-center justify-center transition-transform duration-300">
               <Image 
-                src="/kegologo.jpeg" 
+                src="/logo.png" 
                 alt="KEGO Builders Logo" 
                 fill
-                className="object-cover rounded-md"
+                className="object-contain"
               />
             </div>
             
@@ -67,7 +68,8 @@ export default function Footer() {
           <h4 className="text-amber-500 font-black text-xs uppercase tracking-widest">Corporate Contacts</h4>
           <div className="space-y-4 pt-1">
             <a href="tel:0742254007" className="flex items-center gap-3 hover:text-amber-400 transition-colors group">
-              <div className="w-9 h-9 rounded bg-slate-900 border border-slate-800 flex items-center justify-center group-hover:border-amber-500/30 transition-colors">
+              {/* Swapped inner box background to a subtle grey tone for depth */}
+              <div className="w-9 h-9 rounded bg-slate-800/40 border border-slate-700/60 flex items-center justify-center group-hover:border-amber-500/30 transition-colors">
                 <Phone size={14} className="text-amber-500" />
               </div>
               <div>
@@ -76,7 +78,7 @@ export default function Footer() {
               </div>
             </a>
             <div className="flex items-center gap-3 group">
-              <div className="w-9 h-9 rounded bg-slate-900 border border-slate-800 flex items-center justify-center">
+              <div className="w-9 h-9 rounded bg-slate-800/40 border border-slate-700/60 flex items-center justify-center">
                 <MapPin size={14} className="text-amber-500" />
               </div>
               <div>
@@ -89,7 +91,8 @@ export default function Footer() {
 
       </div>
 
-      <div className="border-t border-slate-900/60 bg-[#02040a] py-6 px-4 text-center text-xs text-gray-500 font-semibold uppercase tracking-wider">
+      {/* Adjusted base copyright layer to sit elegantly below the main charcoal tier */}
+      <div className="border-t border-slate-800/40 bg-[#0b0b0c] py-6 px-4 text-center text-xs text-gray-500 font-semibold uppercase tracking-wider">
         © 2026 KEGO Builders. All Rights Reserved. Built with Premium Standards.
       </div>
     </footer>

@@ -14,15 +14,17 @@ export default function Header() {
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
     { name: 'Services', href: '/services' },
-    {name: 'Projects', href: '/projects'},
+    { name: 'Projects', href: '/projects' },
     { name: 'Contact', href: '/contact' },
   ];
 
   const isActive = (path: string) => pathname === path;
 
   return (
-    <>
-      {/* TOP INFO BAR */}
+    /* We place the sticky positioning on this outer wrapper container so both components stick together */
+    <header className="sticky top-0 z-50 w-full shadow-xl">
+      
+      {/* TOP INFO BAR (Now permanently fixed at the top alongside main nav) */}
       <div className="bg-[#030712] text-gray-300 text-xs sm:text-sm py-2.5 px-4 border-b border-amber-500/10">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
           <div className="flex items-center gap-6">
@@ -42,19 +44,19 @@ export default function Header() {
       </div>
 
       {/* CORE NAVIGATION */}
-      <header className="sticky top-0 z-50 bg-[#0A192F]/95 backdrop-blur-md border-b border-slate-800/80 text-white shadow-xl">
+      <div className="bg-[#121214]/95 backdrop-blur-md border-b border-slate-800/80 text-white relative">
         <div className="max-w-7xl mx-auto px-4 h-24 flex justify-between items-center">
           
           {/* Brand Logo & Typography */}
-          <Link href="/" className="flex items-center gap-4 group">
-            {/* ENLARGED LOGO CONTAINER */}
-            <div className="relative w-16 h-16 flex items-center justify-center bg-slate-900 rounded-lg border-2 border-slate-700/80 p-1 shadow-inner group-hover:border-amber-500 transition-colors duration-300">
+          <Link href="/" className="flex items-center gap-3 group">
+            {/* ENLARGED, UNENCLOSED LOGO WRAPPER */}
+            <div className="relative w-20 h-20 sm:w-24 sm:h-24 flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
               <Image 
-                src="/kegologo.jpeg" 
+                src="/logo.png" 
                 alt="KEGO Builders Logo" 
                 fill
                 priority
-                className="object-cover rounded-md transition-transform duration-300 group-hover:scale-105"
+                className="object-contain"
               />
             </div>
             
@@ -110,7 +112,7 @@ export default function Header() {
 
         {/* Mobile Flyout */}
         {isOpen && (
-          <div className="md:hidden bg-[#0A192F] border-b border-slate-800/90 px-4 pt-2 pb-6 space-y-3 absolute top-full left-0 w-full shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
+          <div className="md:hidden bg-[#121214] border-b border-slate-800/90 px-4 pt-2 pb-6 space-y-3 absolute top-full left-0 w-full shadow-2xl animate-in fade-in slide-in-from-top-2 duration-200">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -134,7 +136,7 @@ export default function Header() {
             </div>
           </div>
         )}
-      </header>
-    </>
+      </div>
+    </header>
   );
 }
