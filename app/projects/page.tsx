@@ -19,7 +19,7 @@ const projectImages: ProjectImage[] = [
     alt: 'Premium Residential Villa structural project', 
     title: 'Premium Residential Villa', 
     scope: 'Structural Engineering & Masonry',
-    description: 'Execution of complete substructure and superstructure masonry frameworks for a luxury multi-story family estate. Project involved complex formwork assembly for cantilevered floor slabs, high-tensile rebar reinforcement configuration, and the precise casting of architectural concrete columns designed to accommodate extensive floor-to-ceiling perimeter glazing systems.' 
+    description: 'Main Residence: A large, modern multi-story luxury home featuring a multilayered hipped roof, neutral-toned stucco exterior finishes, expansive glass windows, and strong ground-level pillar support.   Outdoor Pavilion: A matching detached gazebo lounge in the foreground with an open-sided structural design, matching roof shingles, and solid pillars, ideal for outdoor entertainment.' 
   },
   { 
     id: 2, 
@@ -27,7 +27,7 @@ const projectImages: ProjectImage[] = [
     alt: 'Commercial Office Space structural fit out', 
     title: 'Commercial Corporate Complex', 
     scope: 'Commercial Interior Framing',
-    description: 'A comprehensive internal structural partition project engineered for dynamic corporate floor plans. Features integrated steel studs, sound-dampening high-density insulation layers, structural column support adjustments, and multi-tier utility rough-ins tailored seamlessly for modern corporate technology infrastructures.' 
+    description: 'Roofing Material: Dark composite or asphalt shingles installed in a clean, uniform finish. Design Style: Multi-pitched hipped roof configuration with multiple intersecting planes, providing strong architectural depth and watershed efficiency.Details: Features a prominent central chimney stack and wide overhangs with continuous fascia trim lining the roof perimeter.' 
   },
   { 
     id: 3, 
@@ -35,7 +35,7 @@ const projectImages: ProjectImage[] = [
     alt: 'Luxury Living Space Finishes tiling ceiling design', 
     title: 'Luxury Residential Interior Finishes', 
     scope: 'Premium Interior Finishing',
-    description: 'Premium interior architectural detailing utilizing laser-aligned large format porcelain tiles with precision expansion joints. The scope includes hand-applied gypsum plaster skimming, floating architectural bulkhead ceiling installations, and hidden accent pockets calibrated for custom perimeter LED ambient environments.' 
+    description: 'Structure Type: A luxury framed luxury tent camp or glamping eco-lodge unit built on an elevated timber platform deck. Roofing & Framework: Features a tensioned green canvas stretch roof with dual high peaks and deep overhangs supported by sturdy wooden poles. Framing & Openings: Accented with warm timber frames, large glass-paneled sliding doors, and mesh screen windows, complete with an external wooden access ramp and entry steps.' 
   },
   { 
     id: 4, 
@@ -43,7 +43,7 @@ const projectImages: ProjectImage[] = [
     alt: 'Architectural Roofing Truss Layout structural system', 
     title: 'Architectural Structural Roofing', 
     scope: 'Roofing Systems & Steel Fabrication',
-    description: 'Engineering, fabrication, and installation of a heavy-gauge clear-span steel roof truss system. The framework was treated with anti-corrosive primer coatings before being clad with high-performance, weather-insulated trapezoidal roof profiles engineered for maximum sound attenuation and thermal efficiency.' 
+    description: 'talk about the roof, write in prose, how i will write the description in the website' 
   },
   { 
     id: 5, 
@@ -51,199 +51,199 @@ const projectImages: ProjectImage[] = [
     alt: 'Structural Concrete Pouring Slab Foundation works', 
     title: 'Heavy Structural Concrete Pouring', 
     scope: 'Substructure & Civil Foundations',
-    description: 'Precision formwork layout planning and heavy reinforcing mesh assembly for a load-bearing suspended floor slab. Implemented strict vibrational compaction methods during the concrete pour phase to ensure uniform aggregate distribution, eliminate internal voids, and achieve maximum target structural MPa density.' 
+    description: 'This luxury multi-story residence features a sophisticated dark brown or charcoal shingle roof that adds a sharp, modern contrast to the crisp white trim and light grey exterior walls. Designed with a clean multi-hipped configuration, the roof lines intersect smoothly to create a balanced, expansive profile across the varying wings of the home. A prominent central chimney stack anchors the design, while the extended overhangs and crisp fascia boards tie the entire structural envelope together with a neat, professional finish.' 
   },
   { 
     id: 6, 
     src: '/image8.jpeg', 
-    alt: 'Modern Canopy Framework outdoor cantilever entrance', 
-    title: 'Modern Entrance Canopy Framework', 
+    alt: 'Modern Canopy Framework structural steel portal', 
+    title: 'Modern Roofing', 
     scope: 'Exterior Structural Additions',
     description: 'Design and construction of an architectural exterior portal canopy framework. Built utilizing structural hollow steel sections combined with specialized masonry anchor connections, engineered to safely counter strong localized wind load forces and dead load stresses.' 
   },
   { 
     id: 7, 
     src: '/image9.jpeg', 
-    alt: 'Bespoke Window Layout lintel reinforce panels', 
-    title: 'Panoramic Structural Window Openings', 
+    alt: 'Bespoke Window Layout lintel reinforce panel', 
+    title: 'Contemporary Gable-Roof Villa Construction', 
     scope: 'Structural Alterations & Masonry',
-    description: 'Retrofitting and casting high-load pre-stressed concrete lintels to facilitate panoramic window integrations. Structural openings were reinforced with vertical tied columns to redistribute dead loads from overhead masonry walls down to the primary footing pads without settlement crack risks.' 
+    description: 'This architectural showcase highlights a striking residential build featuring a dramatic, high-pitched multi-gable roof finished in dark slate tiles with crisp white fascia lining. The upper structural framing presents an open-gable design, while the lower level incorporates robust stone masonry walls, elegant front pillars, and detailed entry framing. Currently shown during the active construction phase, this project blends sharp geometry with solid craftsmanship, offering a clean, contemporary profile ready for portfolio display.' 
   },
   { 
     id: 8, 
     src: '/image10.jpeg', 
     alt: 'Perimeter Wall Masonry stone finish security wall', 
-    title: 'Dressed Stone Perimeter Barrier', 
+    title: 'Contemporary Multi-Level Residential Framing & Roofing', 
     scope: 'Civil Works & Security Masonry',
-    description: 'Construction of a heavy perimeter security masonry barrier utilizing machine-cut, hand-dressed natural stones. Incorporates deep structural strip footings, intermediate concrete columns for lateral stabilization, integrated weep holes for ground hydrostatic relief, and conduits for security system integration.' 
+    description: 'This expansive double-story construction showcases a sophisticated multi-pitched dark shingle roof featuring prominent triangular dormer gables with crisp white framing and detailed window openings. Currently in the structural phase, the robust masonry walls are coated in a smooth grey render, complemented by neatly installed metal-gridded window frames and strong ground-level pillar foundations that establish a solid, modern profile.' 
   },
   { 
     id: 9, 
     src: '/image11.jpeg', 
     alt: 'Custom Plastering Detail smooth wall screed finishing', 
-    title: 'Precision Structural Plastering', 
+    title: 'Luxury Multi-Gable Red Shingle Roof Installation', 
     scope: 'Interior & Exterior Plastering',
-    description: 'Application of multi-coat premium internal wall plastering over concrete masonry block work. Utilizing a controlled sand-cement-lime ratio mix to prevent shrink cracking, the surface was troweled down using laser guidelines to produce a completely plumb, flawless level-5 paint finish surface.' 
+    description: 'This large double-story residential project features an elaborate, high-pitched multi-hipped and gabled roof finished in rich red composite shingle tiles that create a striking visual centerpiece. The roof design incorporates multiple intersecting planes, clean valley lines, and several prominent dormer gables trimmed with crisp white fascia boards and triangular windows. Supported by heavy-duty timber framing and multi-tiered concrete lintels below, the complex roofing structure delivers exceptional architectural depth, robust weather resistance, and a sophisticated finish tailored for a high-end estate.' 
   },
   { 
     id: 10, 
     src: '/image12.jpeg', 
     alt: 'Multi Vehicle Carport shade cantilever posts structural steel', 
-    title: 'Engineered Multi-Vehicle Carport', 
+    title: 'Castlesque Multi-Cone Red Shingle Roof Construction', 
     scope: 'Structural Steel Components',
-    description: 'Fabrication of an open-bay parking protection facility utilizing heavy-duty universal columns anchored deep into engineered independent concrete block basements. Features a durable framework integrated with commercial grade weather-resistant canvas shade sails.' 
+    description: 'This striking architectural build features a magnificent arrangement of steep, cone-shaped turret roofs finished in premium red asphalt shingles. The vibrant red shingle textures crown the circular masonry towers, lending a grand, castle-like silhouette to the expansive multi-story estate currently under construction. With sharp conical geometry, clean overhang lines, and weather-resistant shingle installation, this custom roof structure perfectly merges classic fairytale design with durable modern engineering.' 
   },
   { 
     id: 11, 
     src: '/image13.jpeg', 
     alt: 'Foundation Footing Stage steel tie mesh excavation ground', 
-    title: 'Reinforced Foundation Footings', 
+    title: 'Steel Truss Framing and Roof Decking Installation', 
     scope: 'Substructure Civil Engineering',
-    description: 'Deep structural excavation, ground soil compaction testing, and anti-termite chemical ground treatment application. Steel reinforcing cages were tied manually on-site following detailed engineering blueprints to establish deep pad and strip footing systems.' 
+    description: 'This in-progress shot captures the heavy-duty structural phase of a complex roofing system, featuring an intricate network of lightweight galvanized steel trusses and purlins. Workers on site are actively handling plywood or OSB roof decking boards over the structural frame, setting the stage for subsequent shingle installation. The web of metal bracing and precision-engineered trusses provides exceptional load-bearing strength and stability for the multi-hipped architectural layout.' 
   },
   { 
     id: 12, 
     src: '/image14.jpeg', 
     alt: 'Staircase Structural Framing cast in place concrete forms', 
-    title: 'Cast-in-Place Monolithic Staircase', 
+    title: 'Contemporary Double-Story Concrete Build', 
     scope: 'Bespoke Concrete Engineering',
-    description: 'Intricate custom timber formwork assembly and structural steel tying for a geometric, cast-in-place concrete staircase layout. Engineered with precise riser and tread calculations to guarantee safe structural navigation and effortless modern aesthetic values.' 
+    description: 'This large double-story residential construction showcases a clean, modern architectural design featuring a dark hipped shingle roof with crisp, layered concrete fascia bands and cornices. The structure is currently in the plastering and exterior finishing stage, displaying smooth grey rendered walls, neatly framed window openings, and a prominent covered front entrance porch overlooking a developing compound.' 
   },
   { 
     id: 13, 
     src: '/image15.jpeg', 
     alt: 'External Paint Coatings texturized protective layer wall', 
-    title: 'All-Weather Exterior Texturized Coating', 
+    title: 'Classic Stone Villa with Brown Shingle Dormer Roof', 
     scope: 'Exterior Specialty Finishing',
-    description: 'Application of high-performance architectural texturized acrylic coating systems across outer masonry elevations. The multi-layer specification provides long-term UV protection, elastomeric bridging of micro-fissures, and exceptional water-shedding performance against tropical elements.' 
+    description: 'This charming residential construction showcases a sturdy natural stone masonry body crowned by an expansive, steep hip roof finished in textured brown architectural shingles. The design features multiple triangular dormer gables trimmed in crisp white framing with ventilation windows, adding classic architectural detail. Set amidst a natural, tree-lined landscape, the house combines heavy-duty stone craftsmanship with a warm earth-toned roof profile.' 
   },
   { 
     id: 14, 
     src: '/image16.jpeg', 
     alt: 'Guttering Drainage Systems roof water pipes downspouts', 
-    title: 'High-Capacity Stormwater Management', 
+    title: 'Custom Hexagonal Gazebo with Tiered Shingle Roof', 
     scope: 'Roofing Plumbing & Drainage',
-    description: 'Integration of heavy-duty, seamless commercial gutter systems calibrated to efficiently manage high-volume tropical storm runoff. Outfitted with heavy PVC downspouts connected directly into sub-surface perimeter drainage lines and masonry soak-away pits.' 
+    description: 'This distinct circular masonry gazebo and garden pavilion features a unique multi-tiered, pagoda-style conical roof finished in textured brown architectural shingles with clean white fascia board separation lines. The structure is built with robust stone masonry walls, arched window frames with security grilles, and wide roof overhangs, creating an elegant and functional outdoor lounge or entertainment space.' 
   },
   { 
     id: 15, 
     src: '/image17.jpeg', 
     alt: 'Site Preparation Works site clearing datum alignment survey', 
-    title: 'Comprehensive Civil Site Preparation', 
+    title: 'Timber Roof Framing and Gazebo Construction', 
     scope: 'Civil Earthworks & Surveys',
-    description: 'Initial site mobilization stage comprising comprehensive land clearing, mechanical topsoil excavation, and the establishment of an immutable benchmark datum point by optical surveying instruments to guide all subsequent structural elevations accurately.' 
+    description: 'This construction-stage image highlights the intricate timber roof framing of a circular stone gazebo or garden pavilion. The structure features a conical network of radial wooden rafters and purlins anchored to a reinforced concrete ring beam, topped with a decorative multi-tiered wooden finial framework. Set atop robust masonry walls with fitted metal door and window frames, this phase showcases the precise carpentry required before shingle or tile installation.' 
   },
   { 
     id: 16, 
     src: '/image18.jpeg', 
     alt: 'Bathroom Floor Tiling wet area liquid waterproofing porcelain', 
-    title: 'Wet-Area Wet Room Engineering', 
+    title: 'Dark Shingle Roof Installation', 
     scope: 'Specialized Waterproofing & Tiling',
-    description: 'Application of multi-layer elastomeric liquid waterproofing membranes across floor slabs and vertical shower walls. Covered by precision-cut vitrified porcelain tiles laid out with water-resistant antimicrobial grouting systems to prevent capillary leakage.' 
+    description: 'This detailed overhead view highlights a complex multi-hipped architectural roof system finished with neat, dark grey asphalt shingles. The layout features precise intersecting roof planes, clean ridge caps, and a deeply recessed valley designed for optimal water drainage and structural weatherproofing.' 
   },
   { 
     id: 17, 
     src: '/image19.jpeg', 
     alt: 'Main Retaining Wall Layout reinforced blocks civil earth retention', 
-    title: 'Reinforced Earth Retaining Structure', 
+    title: 'Modern Multi-Story Shingle Roof Villa', 
     scope: 'Civil Engineering & Structural Control',
-    description: 'Structural block retaining barrier designed to stabilize sloping topographical terrains. Constructed using solid concrete blocks filled with high-strength grout and rebar doweled securely directly into a wide, heavily reinforced baseline footing foundation.' 
+    description: 'This large double-story residential construction features an extensive, low-pitch hipped roof finished in uniform dark architectural shingles. The exterior is styled with crisp concrete cornices, detailed fascia bands, and raw masonry walls awaiting final finishes, framing a spacious multi-winged layout and a developing compound.' 
   },
   { 
     id: 18, 
     src: '/image20.jpeg', 
     alt: 'Modern Living Area Fit Out drywall acoustics framing', 
-    title: 'Interior Architectural Drywall Layouts', 
+    title: 'Steel Truss Framing and Roof Decking Installation', 
     scope: 'Acoustic Commercial Fit-Outs',
-    description: 'Erection of premium interior acoustic drywall partition configurations. Incorporates internal mineral-wool acoustic batting, multi-layered tapered-edge fire-rated plasterboards, and professional taping services to deliver perfectly seamless smooth walls.' 
+    description: 'This in-progress shot captures the heavy-duty structural phase of a complex roofing system, featuring an intricate network of lightweight galvanized steel trusses and purlins. Workers on site are actively handling plywood or OSB roof decking boards over the structural frame, setting the stage for subsequent shingle installation. The web of metal bracing and precision-engineered trusses provides exceptional load-bearing strength and stability for the multi-hipped architectural layout.' 
   },
   { 
     id: 19, 
     src: '/image21.jpeg', 
     alt: 'Bespoke Joinery Details custom carpentry timber fitment', 
-    title: 'Custom Architectural Joinery Integration', 
+    title: 'Structural Steel Truss Framing Phase', 
     scope: 'Premium Millwork & Fit-Outs',
-    description: 'On-site installation and precision micro-shimming of bespoke heavy cabinetry layouts. All anchoring channels are structurally fastened directly behind drywall frameworks using heavy-duty hidden steel brackets to support significant vertical weight stresses.' 
+    description: 'This active construction stage captures the framing of a large residential property, featuring an intricate overhead network of lightweight galvanized steel trusses and structural beams. Set atop a multi-tiered concrete lintel and pillar framework with scaffolding in place, the exposed steel skeleton highlights the precise engineering required to support the upcoming roof installation.' 
   },
   { 
     id: 20, 
     src: '/image22.jpeg', 
     alt: 'Driveway Paving Project interlocking paving blocks ground civil', 
-    title: 'Heavy Duty Interlocking Pavements', 
+    title: 'Steel Roof Truss Framing', 
     scope: 'External Civil Groundwork',
-    description: 'Execution of a multi-vehicle driveway profile utilizing heavy-duty 80mm interlocking concrete paving blocks. Laid above a thoroughly rolled sub-grade base, a crusher-run layer, and a laser-screened quarry sand bed layer to completely eliminate tracking risks.' 
+    description: 'This construction-stage image showcases the professional installation of a lightweight galvanized steel roof truss and purlin framework atop a solid stone masonry structure. The precision-engineered metal skeleton forms a clean, hip-roof profile with neatly finished fascia boarding along the eaves, providing a strong and durable structural base ready for upcoming roofing materials.' 
   },
   { 
     id: 21, 
     src: '/image23.jpeg', 
     alt: 'Balcony Guardrail Assembly stainless steel core drilled safety glass', 
-    title: 'Stainless-Steel Structural Balustrades', 
+    title: 'Shingle Roofing Installation on Steel Framing', 
     scope: 'Architectural Metalwork & Safety',
-    description: 'Fabrication and core-drilling of grade-316 stainless steel handrail structures along structural balconies. Designed with rigid baseplates chemical-anchored directly into the concrete floor deck to easily exceed standard building code edge-impact testing.' 
+    description: 'This active construction phase captures workers laying dark architectural shingles directly over a precision-engineered galvanized steel truss roof framework. Set atop a solid stone masonry structure with a clean white fascia trim, the image showcases the seamless transition from raw metal skeleton to a weatherproof, textured shingle finish.' 
   },
   { 
     id: 22, 
     src: '/image24.jpeg', 
     alt: 'Main Gate Framework Design rolling track automated perimeter', 
-    title: 'Heavy Duty Perimeter Gate Engineering', 
+    title: 'Shingle Roofing Installation on Steel Framing', 
     scope: 'Structural Metal Structures',
-    description: 'Structural design and installation of a heavy vehicular access sliding gate. The main structural columns are cast deeply inside subterranean concrete footings and outfitted with precision-machined heavy-duty internal steel guide wheels on a track system.' 
+    description: 'This active construction phase captures workers laying dark architectural shingles directly over a precision-engineered galvanized steel truss roof framework. Set atop a solid stone masonry structure with a clean white fascia trim, the image showcases the seamless transition from raw metal skeleton to a weatherproof, textured shingle finish.' 
   },
   { 
     id: 23, 
     src: '/image25.jpeg', 
     alt: 'Indoor Kitchen Countertop Tiling marble edge alignment mitre', 
-    title: 'Premium Solid Surface Worktops', 
+    title: 'Modern Two-Story Residential Build with Dark Shingle Roof', 
     scope: 'High-End Kitchen Masonry',
-    description: 'Bespoke mitred edging installation of premium quartz slab surfaces across solid brick under-structures. Features reinforced structural support profiles beneath sink cut-outs to protect the natural stone format from localized pressure fracturing.' 
+    description: 'This in-progress double-story residential construction showcases a sophisticated, low-pitch hipped roof entirely finished in dark architectural shingles. The sleek roofline features a clean white fascia board trim and a centralized triangular dormer gable that adds distinct character. Set atop solid stone masonry walls with framed window openings and an expansive open-porch front layout, the structure combines durable blockwork with a polished shingle finish.' 
   },
   { 
     id: 24, 
     src: '/image26.jpeg', 
     alt: 'Structural Floor Deck Slab rib block floor deck system layout', 
-    title: 'Rib-and-Block Structural Floor Decking', 
+    title: 'Precision Steel Roof Truss Framework', 
     scope: 'Suspended Slab Structural Framing',
-    description: 'Assembly of a composite rib-and-block intermediate flooring deck system. Features pre-stressed structural concrete lintels interspersed with hollow core filler blocks, completely overlaid with high-tensile mesh fabric in preparation for the finishing concrete casting.' 
+    description: 'This construction-phase capture highlights the robust, precision-engineered framework of lightweight galvanized steel trusses erected atop solid masonry walls. The intricate web of metal rafters, web members, and purlins creates a sturdy, high-pitched gable and hip structure designed to deliver exceptional load-bearing strength, long-term durability, and a reliable foundation for high-end shingle installation.' 
   },
   { 
     id: 25, 
     src: '/image27.jpeg', 
     alt: 'Gypsum Board Wall Finishes seamless joint texturing skimming', 
-    title: 'Level 5 Interior Wall Skimming', 
+    title: 'Precision Steel Roof Truss Framework', 
     scope: 'High-End Interior Wall Finishes',
-    description: 'Multi-stage application of specialized interior skimming joint compounds over raw gypsum boards. Every phase undergoes intense directional light inspections and hand sanding routines to create a smooth surface ready for deep high-gloss paints.' 
+    description: 'This construction-phase capture highlights the robust, precision-engineered framework of lightweight galvanized steel trusses erected atop solid masonry walls. The intricate web of metal rafters, web members, and purlins creates a sturdy, high-pitched gable and hip structure designed to deliver exceptional load-bearing strength, long-term durability, and a reliable foundation for high-end shingle installation.' 
   },
   { 
     id: 26, 
     src: '/image28.jpeg', 
     alt: 'Electrical Conduit Routing flame retardant pvc pipes masonry', 
-    title: 'Sub-Surface Electrical Conduit Layouts', 
+    title: 'Galvanized Steel Truss Frame with In-Progress Shingle Roofing', 
     scope: 'First-Fix Mechanical & Electrical Services',
-    description: 'Strategic chasing and tracking of heavy-duty flame-retardant PVC electrical conduit pipelines inside structural masonry layouts. All junction and switch box containers are laser-leveled and deep flush-mounted before final plastering work.' 
+    description: 'This construction site capture shows an expansive, single-story masonry structure featuring a robust framework of lightweight galvanized steel trusses topped with partially installed dark asphalt shingles. The layout includes integrated dormer gable framing elements and neat white gutter installations along the eaves, illustrating the precise transition toward a weatherproof, high-end shingle-finished roof.' 
   },
   { 
     id: 27, 
     src: '/image29.jpeg', 
     alt: 'Plumbing Supply Network ppr piping thermal fusion welding', 
-    title: 'High-Pressure PPR Plumbing Networks', 
+    title: 'Galvanized Steel Truss Frame with In-Progress Shingle Roofing', 
     scope: 'First-Fix Hydraulic Installations',
-    description: 'Installation of a residential hydraulic distribution grid using premium random copolymer polypropylene (PPR) pipelines joined via thermal fusion welding techniques. System underwent rigorous hydrostatic pressure testing for 24 hours to verify complete joint integrity.' 
+    description: 'This wide construction site capture reveals an expansive single-story structure supported by an open concrete pillar framework, topped with a robust lightweight galvanized steel truss system. Workers are actively engaged on the roof slopes installing dark asphalt shingles around integrated dormer gable framing elements and clean white gutter installations, showcasing the steady progress toward a weatherproof, high-end shingle-finished roof.' 
   },
   { 
     id: 28, 
     src: '/image30.jpeg', 
     alt: 'Roof Facia Trim Install weather tight fascia capping', 
-    title: 'Architectural Fascia & Eaves Finishing', 
+    title: 'Completed Dark Shingle Roof with Integrated Dormers', 
     scope: 'Exterior Structural Roofing Detail',
-    description: 'Alignment and installation of architectural heavy-gauge pre-painted aluminum fascia trim cap structures along timber rafter endings. Designed to offer structural weather-tight shielding against water penetration into the internal attic roof framework.' 
+    description: 'This front elevation view highlights a sprawling single-story structure crowned by a massive, fully shingled dark roof. The expansive roof slope is punctuated by dual triangular gable dormers with clean white trim, and a bright white gutter system runs seamlessly along the eaves, completing the professional installation atop the open pillar and masonry base.' 
   },
   { 
     id: 29, 
     src: '/image31.jpeg', 
     alt: 'Final Site Delivery Handover architectural cleaning inspections', 
-    title: 'Comprehensive Project Handover Stage', 
+    title: 'Precision Engineered Steel Truss Roof Skeleton', 
     scope: 'Quality Control & Project Closeout',
-    description: 'Executing final deep programmatic post-construction cleanup workflows, thorough structural stress testing check-out rounds, full services validation auditing, and the collection of comprehensive building documentation logs for final client delivery.' 
+    description: 'This elevated construction site capture showcases the intricate structural framework of lightweight galvanized steel trusses and purlins erected over a reinforced concrete ring beam and masonry wall system. The complex web of precision-aligned metal rafters and bracing provides exceptional structural integrity and load-bearing strength, establishing a durable, high-pitched foundation ready for upcoming roof deck and shingle installation.' 
   }
 ];
 
