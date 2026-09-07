@@ -43,7 +43,7 @@ const projectImages: ProjectImage[] = [
     alt: 'Architectural Roofing Truss Layout structural system', 
     title: 'Architectural Structural Roofing', 
     scope: 'Roofing Systems & Steel Fabrication',
-    description: 'talk about the roof, write in prose, how i will write the description in the website' 
+    description: 'This striking residential project features a bold, high-pitched hip roof finished with rich red shingle tiles that instantly elevate the homes architectural profile. The deep, warm red hue creates a striking contrast against the raw stone and concrete framework, bringing a sense of timeless elegance and warmth to the structure. Engineered with precision, the expansive roof planes feature clean lines and steep slopes designed for superior weather resistance and optimal drainage. The multi-tiered layout on the adjacent building adds geometric depth, while the careful installation of crisp white flashing and trim frames the roof edges neatly. Its a masterclass in durable luxury roofing that combines visual appeal with heavy-duty structural performance.' 
   },
   { 
     id: 5, 
