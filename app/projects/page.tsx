@@ -252,8 +252,32 @@ const projectImages: ProjectImage[] = [
     title: 'CUSTOM EXHIBITION BOOTH - EQUITY ' , 
     scope: 'Custom Exhibition booth.', 
     description: 'A professionally designed exhibition booth created for Equity,  Featuring a clean and welcoming layout tailored for customer engagement and business presentations. The booth combines prominent corporate branding, illuminated features, comfortable consultation areas, integrated information displays, and strategic lighting to create an inviting and professional exhibition environment. '
+  },
+
+  {
+    id: 31,
+    src: '/image33.jpeg',
+    alt: 'Completed Multi-Gable Shingle Roof with Dormer Windows',
+    title: 'CUSTOM EXHIBITION BOOTH - ATESS',
+    scope: 'Custom Exhibition booth.',
+    description:  'A professionally designed and fabricated exhibition booth created ffor ATESS, featuring a clean corporate aesthetic, prominent brand signage, integrated product displays, and a dedicated visitor engagement area. The open-plan layout provides an effective platform for product demonstrations, business discussions, and brand visibility. '
+  },
+  {
+    id: 32,
+    src: '/image34.jpeg',
+    alt: 'Completed Multi-Gable Shingle Roof with Dormer Windows',  
+    title: 'CUSTOM EXHIBITION BOOTH - MARUN PETROCHEMICAL',
+    scope: 'Custom Exhibition booth.',
+    description: 'A striking, large-scale exhibition booth designed to create a strong corporate presence at the KICC. The custom structure combines bold brand colours, elevated architectural elements, illuminated signage, product displays, meeting areas, and an inviting open-plan layout.'
+  },
+  {
+    id: 33,
+    src: '/image35.jpeg',
+    alt: 'Completed Multi-Gable Shingle Roof with Dormer Windows',
+    title:'CUSTOM OFFICE INTERIOR AND BRANDING.',
+    scope: 'Custom Office Interior and Branding.',
+    description: 'A contemporary office interior designed to reflect the clients brand identity through custom reception furniture, feature walls, branded signage, decorating partitions, and refined finishes. The space combines functionality with a clean, professional aesthetic to create a strong first impression for visitors and clients.'
   }
-  
 ];
 
 export default function ProjectsPage() {
