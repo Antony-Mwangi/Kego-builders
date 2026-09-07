@@ -244,7 +244,16 @@ const projectImages: ProjectImage[] = [
     title: 'Precision Engineered Steel Truss Roof Skeleton', 
     scope: 'Quality Control & Project Closeout',
     description: 'This elevated construction site capture showcases the intricate structural framework of lightweight galvanized steel trusses and purlins erected over a reinforced concrete ring beam and masonry wall system.' 
+  },
+  { 
+    id: 30, 
+    src: '/image32.jpeg', 
+    alt: 'Completed Multi-Gable Shingle Roof with Dormer Windows', 
+    title: 'CUSTOM EXHIBITION BOOTH - EQUITY ' , 
+    scope: 'Custom Exhibition booth.', 
+    description: 'A professionally designed exhibition booth created for Equity,  Featuring a clean and welcoming layout tailored for customer engagement and business presentations. The booth combines prominent corporate branding, illuminated features, comfortable consultation areas, integrated information displays, and strategic lighting to create an inviting and professional exhibition environment. '
   }
+  
 ];
 
 export default function ProjectsPage() {
